@@ -1,0 +1,83 @@
+<template name="layout">
+  {{> header}}
+  {{> Template.dynamic template=main}}
+  {{> footer}}
+
+  <script src="/assets/js/theme.bundle.min.js"></script>
+  <script>
+    //swiper -partners
+    if (swiperPartners5 == undefined) {
+      var swiperPartners5 = new Swiper(".swiper-partners-5", {
+        slidesPerView: 3,
+        loop: true,
+        spaceBetween: 16,
+        autoplay: true,
+        breakpoints: {
+          768: {
+            slidesPerView: 4,
+          },
+          1024: {
+            slidesPerView: 5,
+          },
+        },
+        pagination: {
+          el: ".swiper-partners-5-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-partners-5-button-next",
+          prevEl: ".swiper-partners-5-button-prev",
+        },
+      });
+      //swiper-Testimonials
+      var swiperTestimonails = new Swiper(".swiper-testimonials", {
+        autoHeight: true,
+        spaceBetween: 16,
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 16
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 16
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30
+          }
+        },
+        pagination: {
+          el: ".swiper-testimonials-pagination",
+          clickable: true
+        },
+        navigation: {
+          nextEl: ".swiper-testimonials-button-next",
+          prevEl: ".swiper-testimonials-button-prev"
+        }
+      });
+      //Swiper for text/headings
+      var swiperText = new Swiper(".swiper-text", {
+        autoplay: true,
+        direction: "vertical",
+        loop: true,
+        grabCursor: false,
+        speed: 600,
+        autoHeight: true,
+      });
+      //Swiper for text/headings
+      var swiperFade = new Swiper(".swiper-feature-img", {
+        autoplay: true,
+        loop: true,
+        grabCursor: false,
+        speed: 600
+      });
+      // Link together the navigation of both swipers
+      var swiperText = document.querySelector('.swiper-text').swiper
+      var swiperFeatureImage = document.querySelector('.swiper-feature-img').swiper
+
+      swiperText.controller.control = swiperFeatureImage
+      swiperFeatureImage.controller.control = swiperText
+    }
+  </script>
+</template>
