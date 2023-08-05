@@ -1,0 +1,138 @@
+<template name="script">
+  <!--Particles effect for full page-->
+
+  <div class="position-fixed z-fixed pe-none w-100 h-100 start-0 top-0" id="particles-js"></div>
+
+  <!-- begin Back to Top button -->
+  <a href="#" class="toTop bg-white rounded-circle">
+    <i class="bx bxs-up-arrow"></i>
+  </a>
+  <!-- scripts -->
+  <script src="/assets/js/theme.bundle.min.js"></script>
+
+  <!--Swiper slider-->
+
+  <script>
+    var swiper = new Swiper(".swiperFaqs", {
+      effect: "cards",
+      grabCursor: true,
+      cardsEffect: {
+        slideShadows: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+  </script>
+
+  <!--Particles script-->
+
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 25,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#eeeeee"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "var(--bs-dark)"
+          },
+          "polygon": {
+            "nb_sides": 5
+          },
+        },
+        "opacity": {
+          "value": 0.75,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.25,
+            "sync": true
+          }
+        },
+        "size": {
+          "value": 7,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 60,
+            "size_min": 1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": false,
+        },
+        "move": {
+          "enable": true,
+          "speed": 2,
+          "direction": "bottom",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": true,
+          "attract": {
+            "enable": false
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": false,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": false,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 140,
+            "line_linked": {
+              "opacity": 0
+            }
+          },
+          "bubble": {
+            "distance": 200,
+            "size": 60,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 8
+          },
+          "repulse": {
+            "distance": 300,
+            "duration": 0.9
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    });
+
+  </script>
+
+  <script>
+    AOS.init()
+  </script>
+</template>
