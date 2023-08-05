@@ -1,3 +1,114 @@
 <template name="footer">
+  <!--Footer Start-->
+  <footer class="footer bg-dark text-white rounded-top-start-block" data-bs-theme="dark">
+    <div class="container pt-9 pt-lg-11 pb-5">
+      <div class="row">
+        <div class="col-lg-3 col-md-5 mb-5">
+          <a class="d-table mb-4" href="#">
+            <img src="/assets/codeasy2.png" alt="" class="width-10x h-auto">
+          </a>
+          <p class="mb-0"><span class="text-body-tertiary">Phone:</span>
+            <a href="tel:0123456789">+01 1234 56789</a> <br><span class="text-body-tertiary">Email:</span> <a
+              href="mailto:mailus@domain.com">mailus@domain.com</a>
+          </p>
+          <!--:Dark Mode:-->
+          <div class="d-inline-flex width-13x align-items-center dropup mt-6">
+            <button class="btn border text-body py-2 px-2 d-flex align-items-center"
+                    id="assan-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown"
+                    data-bs-display="static">
+                                <span class="theme-icon-active d-flex align-items-center">
+                                    <i class="bx align-middle"></i>
+                                </span>
+            </button>
+            <!--:Dark Mode Options:-->
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="assan-theme" style="--bs-dropdown-min-width: 9rem;">
+              <li class="mb-1">
+                <button type="button" class="dropdown-item d-flex align-items-center active"
+                        data-bs-theme-value="light">
+                                        <span class="theme-icon d-flex align-items-center">
+                                            <i class="bx bx-sun align-middle me-2"> </i>
+                                        </span>
+                  Light
+                </button>
+              </li>
+              <li class="mb-1">
+                <button type="button" class="dropdown-item d-flex align-items-center"
+                        data-bs-theme-value="dark">
+                                        <span class="theme-icon d-flex align-items-center">
+                                            <i class="bx bx-moon align-middle me-2"></i>
+                                        </span>
+                  Dark
+                </button>
+              </li>
+              <li>
+                <button type="button" class="dropdown-item d-flex align-items-center"
+                        data-bs-theme-value="auto">
+                                        <span class="theme-icon d-flex align-items-center">
+                                            <i class="bx bx-color-fill align-middle me-2"></i>
+                                        </span>
+                  Auto
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 ms-md-auto  mb-5">
+          <nav class="nav flex-column">
+            <a class="nav-link" href="#">About company</a>
+            <a class="nav-link" href="#">Meet the Team</a>
+            <a class="nav-link" href="#">Contact Us</a>
+          </nav>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 mb-5">
+          <nav class="nav flex-column">
+            <a class="nav-link" href="#">Resource</a>
+            <a class="nav-link" href="#">FAQs</a>
+            <a class="nav-link" href="#">News & media</a>
+            <a class="nav-link" href="#">Raise Capital</a>
+          </nav>
+        </div>
+        <div class="col-lg-2 col-sm-4 mb-5">
+          <nav class="nav flex-column">
+            <a class="nav-link" href="#">Statements</a>
+            <a class="nav-link" href="#">Debit</a>
+            <a class="nav-link" href="#">Fair Policy</a>
+            <a class="nav-link" href="#">Services Guide</a>
+          </nav>
+        </div>
+        <div class="col-lg-3 col-md-8 mb-5">
+          <h5 class="mb-3">Newsletter</h5>
+          <div class="newsletter-signup ">
+            <form>
+              <div class="d-flex flex-column mb-3">
+                <input type="email" placeholder="Enter email address"
+                       class="idSubsEmail form-control form-control-lg mb-2 border-0 shadow-none bg-secondary text-white"
+                       required="">
+                <button class="idSubscribe btn btn-primary btn-lg">Subscribe</button>
+              </div>
+            </form>
+            <span class="small text-body-tertiary d-block">We do not share your email to anyone</span>
+          </div>
+        </div>
+      </div>
+      <hr class="mb-5">
+      <div class="row">
+        <div class="col-sm-5">
+                        <span class="d-block lh-sm small text-body-secondary">&copy; Copyright
+                            <script>
+                                // document.write(new Date().getFullYear())
+
+                            </script>. Codeasy
+                        </span>
+        </div>
+        <div class="col-sm-7">
+          <nav class="nav justify-content-sm-end">
+            <a class="nav-link small text-body-secondary px-0 me-3" href="/privacy"><small>Privacy Policy</small></a>
+            <a class="nav-link small text-body-secondary px-0" href="/terms"><small>Terms of Service</small></a>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+  </footer>
 
 </template>
