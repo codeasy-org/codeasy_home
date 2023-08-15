@@ -1,6 +1,6 @@
 <template name="header">
   <!--Preloader Spinner-->
-  <div class="spinner-loader bg-primary text-white">
+  <div id="header" class="spinner-loader bg-primary text-white">
     <div class="spinner-grow" role="status">
     </div>
     <span class="small d-block ms-2">Loading...</span>
@@ -13,6 +13,7 @@
 <!--          <img src="/assets/subtle_black.svg" alt="" class="navbar-brand-light img-fluid">-->
           <img src="/assets/codeasy2.png" alt="" class="navbar-brand-dark img-fluid">
         </a>
+        <div id="google_translate_element"></div>
 
         <div class="d-flex align-items-center navbar-no-collapse-items order-lg-last">
           <button class="navbar-toggler order-last" type="button" data-bs-toggle="collapse"
@@ -22,16 +23,16 @@
                                 <i></i>
                             </span>
           </button>
-          <div class="nav-item me-3 me-lg-0">
-            <a target="_blank" href="https://github.com/codeasy-org/codeasy" class="btn btn-primary">
-              Github
-            </a>
-          </div>
+<!--          <div class="nav-item me-3 me-lg-0">-->
+<!--            <a target="_blank" href="https://github.com/codeasy-org/codeasy" class="btn btn-primary">-->
+<!--              Github-->
+<!--            </a>-->
+<!--          </div>-->
         </div>
         <div class="collapse navbar-collapse" id="mainNavbarTheme">
           <ul class="navbar-nav ms-auto">
 <!--            <li class="nav-item me-lg-4">-->
-<!--              <a class="nav-link" href="#app-hero" role="button">Home</a>-->
+<!--              <a class="nav-link" href="#" role="button"></a>-->
 <!--            </li>-->
             <li class="nav-item me-lg-4">
               <a class="nav-link" href="#features" role="button">Features</a>
@@ -42,9 +43,24 @@
             <li class="nav-item me-lg-5">
               <a class="nav-link" href="#tech" role="button">Tech</a>
             </li>
+<!--            <li class="nav-item me-lg-5">-->
+<!--              <div class="nav-item mt-lg-3">-->
+<!--                <a target="_blank" href="https://github.com/codeasy-org/codeasy" class="btn btn-primary">-->
+<!--                  Github-->
+<!--                </a>-->
+<!--              </div>-->
+<!--            </li>-->
           </ul>
         </div>
       </div>
     </nav>
   </header>
+<!--  <script>-->
+<!--    function changeLanguage(language) {-->
+<!--      var selectField = document.querySelector("select.goog-te-combo");-->
+<!--      console.log(selectField, language)-->
+<!--      selectField.value = language;-->
+<!--      selectField.dispatchEvent(new Event('change'));-->
+<!--    }-->
+<!--  </script>-->
 </template>

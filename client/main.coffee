@@ -3,6 +3,7 @@ FlowRouter.route '/',
   action: ->
     BlazeLayout.render 'layout', main: 'main'
 
+Template.main.onRendered ->
 
 Template.main.events
   'click .idEmail': (evt) ->
