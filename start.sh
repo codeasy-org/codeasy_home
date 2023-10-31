@@ -1,3 +1,4 @@
+#!/bin/zsh
 export MONGO_URL=mongodb://localhost:27777/codeasy_home
 export MAIL_URL=smtps://meteorstartup:kwlgevradebyrszc@smtp.gmail.com:465
 export ROOT_URL=https://codeasy.org
