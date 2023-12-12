@@ -11,8 +11,8 @@ export ROOT_URL=http://codeasy.org
 
 export PORT=3102
 
-meteor -p3102
+#meteor -p3102
 #meteor node .meteor/build/bundle/main.js --codeasy=codeasy_home
 
-#METEOR_NODE_PATH=$(meteor node -e "console.log(process.execPath);" 2>&1)
-#pm2 start .meteor/local/___build/bundle/main.js --name "codeasy.org" --interpreter "$METEOR_NODE_PATH"
+METEOR_NODE_PATH=$(meteor node -e "console.log(process.execPath);" 2>&1)
+pm2 start .meteor/local/___build/bundle/main.js --name "codeasy.org" --interpreter "$METEOR_NODE_PATH"
